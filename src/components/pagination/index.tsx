@@ -34,6 +34,7 @@ const Pagination: React.FC<{
 
   return (
     <TablePagination
+      onPageChange={null}
       className={classnames(className, classes.root)}
       rowsPerPageOptions={[]}
       labelRowsPerPage=""

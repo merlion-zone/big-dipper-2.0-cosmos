@@ -35,3 +35,9 @@ yarn-error.log*
 
 
 test.js
+
+.yarn/*
+!.yarn/releases
+.pnp.*
+
+.idea

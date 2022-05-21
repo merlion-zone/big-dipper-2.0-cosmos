@@ -10,13 +10,14 @@ import helmet from 'helmet';
 dotenv.config();
 
 const isDev = process.env.NODE_ENV !== 'production';
+const port = +process.env.PORT || 3000;
+
 const app = next({
   dev: isDev,
+  port,
 });
 
 const handle = app.getRequestHandler();
-
-const port = process.env.PORT || 3000;
 
 (async () => {
   try {

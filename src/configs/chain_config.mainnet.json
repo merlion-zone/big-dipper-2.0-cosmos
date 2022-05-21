@@ -1,28 +1,32 @@
 {
-  "title": "Desmos Block Explorer",
-  "network": "desmos-mainnet-1",
-  "icon": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/icon.svg?sanitize=true",
+  "title": "Merlion Block Explorer",
+  "network": "merlion_5000-1",
+  "icon": "/images/merlion-black.svg",
   "logo": {
-    "default": "https://raw.githubusercontent.com/forbole/big-dipper-assets/master/desmos/logo.svg?sanitize=true"
+    "default": "/images/merlion-black.svg"
   },
   "prefix": {
-    "consensus": "desmosvalcons",
-    "validator": "desmosvaloper",
-    "account": "desmos"
+    "consensus": "mervalcons",
+    "validator": "mervaloper",
+    "account": "mer"
   },
   "genesis": {
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "udsm",
-  "votingPowerTokenUnit": "udsm",
+  "primaryTokenUnit": "alion",
+  "votingPowerTokenUnit": "alion",
   "tokenUnits": {
-    "udsm": {
-      "display": "dsm",
+    "alion": {
+      "display": "lion",
+      "exponent": 18
+    },
+    "uusd": {
+      "display": "usm",
       "exponent": 6
     }
   },
   "extra": {
-    "profile": true
+    "profile": false
   }
 }
